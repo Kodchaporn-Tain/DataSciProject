@@ -216,3 +216,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Fonts (ดาวน์โหลดผ่าน Python อัตโนมัติแล้ว)
+*.ttf
+
+# Temporary / Note files
+*.tmp
+notes.txt
+draft.txt
+
+# Python & Jupyter Checkpoints
+__pycache__/
+.ipynb_checkpoints/
+
+# Environment files
+.venv/
+venv/
+env/
+
+# OS System files
+.DS_Store
+Thumbs.db
