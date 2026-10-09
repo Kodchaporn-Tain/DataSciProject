@@ -1,6 +1,7 @@
 pandas
 numpy
 matplotlib
+gradio
 seaborn
 scikit-learn
 joblib
