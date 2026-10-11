@@ -174,7 +174,9 @@ button.primary:hover {
 }
 """
 
-with gr.Blocks(css=custom_css, theme=gr.themes.Soft(font=gr.themes.GoogleFont("Prompt"))) as app:
+custom_theme = gr.themes.Soft(font=gr.themes.GoogleFont("Prompt"))
+
+with gr.Blocks(title="Traffic Analytics Prediction") as app:
     
     gr.HTML(
         """
@@ -244,4 +246,4 @@ with gr.Blocks(css=custom_css, theme=gr.themes.Soft(font=gr.themes.GoogleFont("P
     )
 
 if __name__ == "__main__":
-    app.launch()
+    app.launch(theme=custom_theme, css=custom_css)
