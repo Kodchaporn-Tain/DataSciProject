@@ -246,4 +246,11 @@ with gr.Blocks(title="Traffic Analytics Prediction") as app:
     )
 
 if __name__ == "__main__":
-    app.launch(theme=custom_theme, css=custom_css)
+    host = "0.0.0.0"
+    port = 7860
+    app.launch(
+        server_name=host,
+        server_port=port,
+        theme=custom_theme,
+        css=custom_css
+    )
