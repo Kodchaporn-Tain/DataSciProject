@@ -14,3 +14,4 @@ jobs:
           github_repo_id: ${{ github.repository }}
           huggingface_repo_id: tangmo00/DataSciProject
           hf_token: ${{ secrets.HF_TOKEN }}
+          repo_type: space
