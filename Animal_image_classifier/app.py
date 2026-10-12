@@ -40,8 +40,8 @@ app = gr.Interface(
     fn=predict_animal,
     inputs=gr.Image(type="numpy", label="Upload an Image"),
     outputs=gr.Label(num_top_classes=3, label="Prediction"),
-    title="Paws & Wings AI: Animal Classifier",
-    description="อัปโหลดรูป นก, แมว หรือ สุนัข เพื่อให้ AI ทำนายผล"
+    title="Animal Image Classifier",
+    description="อัปโหลดรูป นก, แมว หรือ สุนัข เพื่อทำนายผล"
 )
 
 if __name__ == "__main__":
