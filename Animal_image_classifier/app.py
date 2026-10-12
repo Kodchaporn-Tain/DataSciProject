@@ -9,7 +9,7 @@ import os
 
 # โหลดโมเดล Transfer Learning ที่เทรนเสร็จแล้ว
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR / "transfer_model.h5"
+MODEL_PATH = BASE_DIR / "model/transfer_model.h5"
 
 if not MODEL_PATH.exists():
     raise FileNotFoundError(f"Model not found at {MODEL_PATH}. Please run train.py first.")
@@ -46,6 +46,6 @@ app = gr.Interface(
 
 if __name__ == "__main__":
     app.launch( 
-        server_name=os.getenv("HOST", "0.0.0.0"),
-        server_port=int(os.getenv("PORT", "8080"))
+        server_name=os.getenv("HOST", "127.0.0.1"),
+        server_port=int(os.getenv("PORT", "7860"))
     )

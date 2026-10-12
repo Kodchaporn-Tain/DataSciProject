@@ -247,7 +247,7 @@ with gr.Blocks(title="Traffic Analytics Prediction") as app:
 
 if __name__ == "__main__":
     app.launch(
-        server_name=os.getenv("HOST", "0.0.0.0"),
+        server_name=os.getenv("HOST", "127.0.0.1"),
         server_port=int(os.getenv("PORT", "7860")),
         theme=custom_theme,
         css=custom_css
