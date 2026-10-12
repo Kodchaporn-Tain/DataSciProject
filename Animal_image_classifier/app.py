@@ -5,6 +5,7 @@ import tensorflow as tf
 from PIL import Image
 from pathlib import Path
 import config
+import os
 
 # โหลดโมเดล Transfer Learning ที่เทรนเสร็จแล้ว
 BASE_DIR = Path(__file__).resolve().parent
@@ -46,5 +47,5 @@ app = gr.Interface(
 if __name__ == "__main__":
     app.launch( 
         server_name=os.getenv("HOST", "0.0.0.0"),
-        server_port=int(os.getenv("PORT", "8080")),
-            )
+        server_port=int(os.getenv("PORT", "8080"))
+    )
