@@ -259,7 +259,7 @@ python app.py
 ##  URL ของเว็บแอป
 
 - **Traffic Analytics Prediction:** https://traffic-prediction.up.railway.app  
-- **Animal Image Classifier:** https://animal-classifier.up.railway.app  
+- **Animal Image Classifier:** https://animal-image-classifier.up.railway.app  
 
 ## รายชื่อผู้จัดทำ
 
