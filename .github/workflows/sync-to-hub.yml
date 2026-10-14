@@ -23,4 +23,4 @@ jobs:
           
           python -m huggingface_hub.cli.hf upload tangmo00/traffic-prediction ./traffic-prediction . --repo-type space --token $HF_TOKEN
           
-          python -m huggingface_hub.cli.hf upload tangmo00/Animal_image_classifier ./Animal_image_classifier . --repo-type space --token $HF_TOKEN
+          python -m huggingface_hub.cli.hf upload tangmo00/Animal_image_classifier ./Animal_image_classifier/app . --repo-type space --token $HF_TOKEN
