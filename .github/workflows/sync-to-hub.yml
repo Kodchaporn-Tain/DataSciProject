@@ -19,9 +19,8 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          python -m pip install --upgrade pip
-          pip install -U "huggingface_hub[cli]"
+          pip install -U huggingface_hub
           
-          huggingface-cli upload tangmo00/traffic-prediction ./traffic-prediction . --repo-type space --token $HF_TOKEN
+          python -m huggingface_hub.cli.hf upload tangmo00/traffic-prediction ./traffic-prediction . --repo-type space --token $HF_TOKEN
           
-          huggingface-cli upload tangmo00/Animal_image_classifier ./Animal_image_classifier . --repo-type space --token $HF_TOKEN
+          python -m huggingface_hub.cli.hf upload tangmo00/Animal_image_classifier ./Animal_image_classifier . --repo-type space --token $HF_TOKEN
